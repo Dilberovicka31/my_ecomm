@@ -3,7 +3,7 @@ const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const bodyParser = require('body-parser');
 const {typeDefs, resolvers} = require('./schemas'); // Update this import based on your schema location
-const resolvers = require('./graphql/resolvers'); // Update this import based on your resolvers location
+
 const connectDB = require('./config/connection');
 
 const app = express();
